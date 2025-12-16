@@ -1,0 +1,409 @@
+/* ============================= */
+/* 全体（Notion風の淡い背景） */
+/* ============================= */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #111;
+    background: #f5f5f7;
+    /* ← ここ追加 */
+    line-height: 1.7;
+}
+
+.profile-icon {
+    position: fixed;
+    top: 16px;
+    left: 24px;
+    z-index: 200;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+}
+
+
+/* ============================= */
+/* Header（白＋薄影で浮かせる） */
+/* ============================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px 18px 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffffcc;
+    /* 半透明の白で軽くする */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    transition: opacity .2s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.6;
+}
+
+
+/* ============================= */
+/* Hero（中央に大きな画像＋余白） */
+/* ============================= */
+
+/* Hero 追加調整（STEP1） */
+
+.hero {
+    text-align: center;
+    padding: 140px 20px 100px;
+    /* ← 縮める */
+    background: #eef6ff;
+}
+
+.hero-eyebrow {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #555;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 300px;
+    /* ← ベストバランス */
+    height: auto;
+    margin: 0 auto 24px;
+}
+
+
+/* ============================= */
+/* Section（白カード＋軽い影 + 角丸） */
+/* ============================= */
+
+.section {
+    background: #ffffff;
+    /* Notionのカードっぽい白 */
+    padding: 70px 30px;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 14px;
+    /* 柔らかい角丸 */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    /* Notion風のひかえめ影 */
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+
+/* ============================= */
+/* About（プロフィール画像中心） */
+/* ============================= */
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.about-text {
+    font-size: 18px;
+    text-align: center;
+    color: #444;
+}
+
+.about-list {
+    max-width: 600px;
+    /* 横幅を制限 */
+    margin: 0 auto;
+    /* ul自体を中央に */
+    padding-left: 20px;
+    /* 箇条書きの点の余白だけ */
+    list-style: none;
+}
+
+.about-list li {
+    text-align: left;
+    /* 文字は左揃え */
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* Works（カードをNotion風に） */
+/* ============================= */
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.work-card {
+    padding: 20px;
+    background: #fafafa;
+    /* 優しいグレー */
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.work-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.work-card h3 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.work-summary {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 16px;
+    min-height: 44px;
+    /* ← ここがポイント */
+    min-height: 44px;
+    text-align: left;
+}
+
+.work-card p {
+    margin-bottom: 6px;
+}
+
+.work-card ul {
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.work-card li {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.used-tech {
+    font-size: 13px;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logs-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.log-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.log-date {
+    min-width: 70px;
+    color: #888;
+}
+
+.log-tag {
+    min-width: 90px;
+    font-size: 13px;
+    color: #555;
+}
+
+.log-text {
+    color: #333;
+}
+
+.logs-more {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.logs-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logs-more-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.logs-more-icon {
+    width: 14px;
+    height: 14px;
+}
+
+
+
+/* ============================= */
+/* Contact（シンプル黒ボタン） */
+/* ============================= */
+
+.contact-btn {
+    display: block;
+    width: 280px;
+    margin: 20px auto;
+    padding: 12px 0;
+    text-align: center;
+    background: #111;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity .2s;
+}
+
+.contact-btn:hover {
+    opacity: .7;
+}
+
+.contact-p {
+    text-align: center;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer small {
+    display: block;
+    margin-top: 8px;
+}
+
+.icon-img {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+}
+
+
+.icon-img:hover {
+    transform: translateY(-3px);
+    /* 少し上に浮く */
+    opacity: 1;
+}
+
+.section:nth-of-type(even) {
+    background: #f7f9fc;
+}
+
+.section:nth-of-type(odd) {
+    background: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .header {
+        padding: 14px 20px 14px 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 16px 80px;
+    }
+
+    .hero-img {
+        width: 220px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero-role {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .logs-more-link {
+        padding: 10px 14px;/* タップ領域を広げる */
+        font-size: 15px;/* 少し読みやすく */
+    }
+
+    .logs-more-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+}

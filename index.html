@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taji's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Profile Icon -->
+  <div class="profile-icon">
+    <img src="./images/my face.png" alt="Taji profile">
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Taji's Portfolio</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#logs">Logs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- First View -->
+  <section class="hero">
+    <img src="./images/taji-hero.png" alt="Taji Image" class="hero-img">
+
+    <p class="hero-eyebrow">Manufacturing × Automation × Web</p>
+
+    <h1>Taji｜現場や作業者に寄り添うエンジニア</h1>
+
+    <p class="hero-description">
+      Python / VBA / Web制作で、業務改善と仕組みづくりを行っています
+    </p>
+  </section>
+
+
+  <!-- About -->
+  <section id="about" class="section">
+    <img src="./images/my face.png" class="profile-img">
+    <h2>About Me</h2>
+
+    <p class="about-text">
+      29歳 / 製造エンジニア（化学）。<br>
+      製造現場での実務経験をベースに、業務改善・自動化・Web制作に取り組んでいます。
+    </p>
+
+    <ul class="about-list">
+      <li><strong>バックグラウンド：</strong> 化学系メーカーの製造現場で工程管理・改善を担当</li>
+      <li><strong>得意分野：</strong> Python / VBAを用いた業務自動化、現場向けツール作成</li>
+      <li><strong>スタンス：</strong> 作業者目線で「使われる仕組み」を作ることを重視</li>
+      <li><strong>その他：</strong> 継続力が強み。最近は筋トレにハマっています笑</li>
+    </ul>
+  </section>
+
+
+  <!-- Works -->
+  <section id="works" class="section">
+    <h2>Works</h2>
+
+    <div class="works-grid">
+
+      <div class="work-card">
+        <h3>Python｜メール送信自動化</h3>
+        <p class="work-summary">
+          定型業務を自動化し、作業時間とミスを削減
+        </p>
+
+        <p><strong>Before</strong></p>
+        <ul>
+          <li>手動でメール作成・送信</li>
+          <li>宛先・内容ミスが発生</li>
+        </ul>
+
+        <p><strong>After</strong></p>
+        <ul>
+          <li>ワンクリックで自動送信</li>
+          <li>作業時間を大幅に削減</li>
+        </ul>
+
+        <p class="used-tech">Used：Python</p>
+      </div>
+
+      <div class="work-card">
+        <h3>VBA｜製造実績の電子化</h3>
+        <p class="work-summary">
+          紙・手入力作業を削減し、現場負担を軽減
+        </p>
+
+        <p><strong>Before</strong></p>
+        <ul>
+          <li>Excelへの手入力が多い</li>
+          <li>記入ミス・確認工数が多発</li>
+        </ul>
+
+        <p><strong>After</strong></p>
+        <ul>
+          <li>入力補助・自動チェックを実装</li>
+          <li>誰でも使えるUIに改善</li>
+        </ul>
+
+        <p class="used-tech">Used：VBA</p>
+      </div>
+
+      <div class="work-card">
+        <h3>Web制作｜portfolio</h3>
+        <p class="work-summary">
+          自身のスキルと価値観を伝えるためのWebサイト
+        </p>
+
+        <p><strong>Before</strong></p>
+        <ul>
+          <li>スキルをまとめた場所がなかった</li>
+        </ul>
+
+        <p><strong>After</strong></p>
+        <ul>
+          <li>自己紹介・実績を一元化</li>
+          <li>問い合わせ導線を設置</li>
+        </ul>
+
+        <p class="used-tech">Used：HTML / CSS</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Logs -->
+  <section id="logs" class="section">
+    <h2>Logs</h2>
+
+    <div class="logs-list">
+
+      <div class="log-item">
+        <span class="log-date">継続中</span>
+        <span class="log-tag">Habit</span>
+        <p class="log-text">
+          Web制作・筋トレ・X投稿を継続中。
+          「小さく作って、改善する」を習慣化。
+        </p>
+      </div>
+
+      <div class="log-item">
+        <span class="log-date">2025.10</span>
+        <span class="log-tag">VBA / Manufacturing</span>
+        <p class="log-text">
+          化学メーカーの製造現場にて、日報作成や作業項目管理をVBAで自動化。
+          現場業務の効率化と入力ミス削減を実現。
+        </p>
+      </div>
+
+      <div class="log-item">
+        <span class="log-date">2025.01</span>
+        <span class="log-tag">Web</span>
+        <p class="log-text">
+          ポートフォリオサイトのスマホ対応を実装。
+          レスポンシブ設計を意識してCSSを調整。
+        </p>
+      </div>
+
+      <div class="log-item">
+        <span class="log-date">2024.12</span>
+        <span class="log-tag">Automation</span>
+        <p class="log-text">
+          Pythonでメール自動送信ツールを作成。
+          定型業務の作業時間を大幅に削減。
+        </p>
+      </div>
+
+
+      <div class="logs-more">
+        <a href="https://x.com/@zorugeru169788" target="_blank" class="logs-more-link">
+          <img src="./images/icon_x.webp" alt="X" class="logs-more-icon">
+          More logs on X
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p class="contact-p">お仕事のご相談・ご質問は、<br>  
+    以下のフォームからお気軽にご連絡ください。</p>
+    <a class="contact-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdqC_rpi2H2AGDHBkd20XCZuZmN6d-2Wwquiu-izjcabIrHtg/viewform?usp=dialog" target="_blank">
+      Googleフォームを開く
+    </a>
+  </section>
+
+  <footer>
+    <small>© 2025 Taji's Portfolio</small>
+    <a href="https://x.com/@zorugeru169788" target="_blank" aria-label="X">
+      <img src="./images/icon_x.webp" alt="X" class="icon-img">
+    </a>
+
+  </footer>
+
+</body>
+
+</html>
